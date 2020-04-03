@@ -2,7 +2,7 @@ FROM node:13-stretch
 
 RUN apt-get update && apt-get install autoconf automake libtool curl make g++ unzip
 
-RUN mkdir cd /tmp \
+RUN cd /tmp \
     && curl -L -o /tmp/proto.tar.gz https://github.com/protocolbuffers/protobuf/releases/download/v3.6.1/protobuf-all-3.6.1.tar.gz \
     && tar -xvf /tmp/proto.tar.gz \
     && cd protobuf-3.6.1 \
