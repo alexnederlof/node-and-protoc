@@ -10,4 +10,4 @@ RUN cd /tmp \
     && make && make check && make install && ldconfig \
     && rm -rf /tmp/proto*
 
-RUN npm install -g protobufjs semver
+RUN npm install -g protobufjs semver minimist
